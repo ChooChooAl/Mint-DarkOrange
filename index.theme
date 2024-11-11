@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Mint-DarkOrange
+Comment=A dark flat theme scaled by em rather than pts.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Mint-DarkOrange
+MetacityTheme=Mint-DarkOrange
+IconTheme=AKiconsD
+CursorTheme=yellow
+ButtonLayout=menu:minimize,maximize,close
