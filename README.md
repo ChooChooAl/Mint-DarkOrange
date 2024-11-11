@@ -1,7 +1,7 @@
 # Mint-DarkOrange Desktop Theme.
 A dark orange theme, larger fonts, more contrast, and less spacing between lines in lists (nemo and menu).
 
-![Screenshot-Composite](https://github.com/user-attachments/assets/230dcf7a-06d3-446e-9b20-5957b309ec8f)
+![Mint-DarkOrange screenshot for git](https://github.com/user-attachments/assets/936a0ab3-9852-412e-ac54-c1f40a712870)
 <br>
 Composite shot of the menu, panel, popup right-click, and calendar.<br>
 
