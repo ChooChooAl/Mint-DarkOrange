@@ -15,4 +15,3 @@ I am constantly tweaking this theme as it seems to be my main bread & butter the
 
 ![gtk3 screenshot](https://github.com/user-attachments/assets/00c68ccf-49b1-409d-a7c2-42141b56f1bf)
 <br>Nemo screenshot.  The theme is dark and a light icon theme is suggested.
-11/11/24
