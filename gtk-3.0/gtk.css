@@ -1,5 +1,6 @@
 /* 8/14/24  Commented a lot of the 1em font sizes.
             Solved the issue of right click content in xed being larger than other right click/ drilldown items */
+
 * {
   background-clip: padding-box;
   -GtkToolButton-icon-spacing: 4;
@@ -1678,7 +1679,7 @@ headerbar combobox > .linked > button.combo:disabled {
 
 .primary-toolbar combobox > .linked > entry.combo:dir(ltr),
 headerbar combobox > .linked > entry.combo:dir(ltr) {
-  border-right-style: none; }
+/*  border-right-style: none; */}  /*11/2/24  fixes button border missing on toolbar */
 
 .primary-toolbar combobox > .linked > entry.combo:dir(ltr):focus,
 headerbar combobox > .linked > entry.combo:dir(ltr):focus {
@@ -1880,7 +1881,7 @@ treeview.view header button:disabled {
       background-image: none; }
 
 treeview.view header button:last-child {
-      border-right-style: none; }
+      /*border-right-style: none;*/ }  /*11/2/24*/
 
 treeview.view button.dnd,
 treeview.view button.dnd:selected,
@@ -2995,8 +2996,8 @@ list row {
 
 row:not(:hover) { }
 
-row.activatable.has-open-popup, row.activatable:hover { /* brighten the BG for hover */
-  background-color: rgba(255, 255, 255, 0.2); }
+row.activatable.has-open-popup, row.activatable:hover { /* brighten the BG for hover,  seen in themes selection*/
+  background-color: rgba(255, 255, 255, 0.09); }
 
 row.activatable:active {
   color: rgba(255, 255, 255, 0.87); }
@@ -5280,7 +5281,7 @@ hdyleaflet:first-child headerbar {
 @define-color thirty_five #353535;
 @define-color twenty_three #232323;
 @define-color twenty_one #212121;
-@define-color altered_bg_color #401f00;
+@define-color altered_bg_color #2B1603; /* was, much lighter, #401f00; */
 @define-color bg_hover #bf4f00;
 @define-color nemo_bg #2b1603;
 @define-color borders #818181;
@@ -5295,7 +5296,7 @@ hdyleaflet:first-child headerbar {
 @define-color text_color #F0F0F0;
 @define-color bg_color #170B00;
 @define-color base_color @theme_base_color;
-@define-color selected_bg_color rgba(255, 121, 26, 0.9);
+@define-color selected_bg_color rgba(255, 121, 26, 0.9);  /* #ff791a */
 @define-color selected_fg_color @theme_fg_color;
 @define-color insensitive_bg_color @thirty_five;
 @define-color insensitive_fg_color alpha(@theme_fg_color, 0.5);

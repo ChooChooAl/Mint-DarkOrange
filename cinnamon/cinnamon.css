@@ -130,7 +130,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
       background-color: #FF791A; }
 
 .separator {
-  -gradient-height: 1px;
+  -gradient-height: 3px;
   -gradient-start: rgba(0, 0, 0, 0);
   -gradient-end: rgba(0, 0, 0, 0);
   -margin-horizontal: 1.5em;
