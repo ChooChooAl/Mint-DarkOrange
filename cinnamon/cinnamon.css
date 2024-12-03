@@ -1003,31 +1003,32 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 * ===================================================================*/
 #notification {    /* single line no body */
     font-size: 1em;
-    border: 1px solid rgba(255, 121, 26, 0.8);
-    border-radius: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-left: 5px;
+    border-radius: 10px;
     background-color: #000000;
-    padding: 10px 30px;
-    spacing-rows: 10px;
+    padding: 23px;
+    spacing-rows: 8px;
     spacing-columns: 10px;
     margin-from-right-edge-of-screen: 20px;
 /* header only in popup is just one line, but in notification applet, a time line is added.  Space is needed for 2 lines. */
     min-height: 50px;   /* fixes one line, header only, notification */
-    width: 34em;
+    width: 44em;
     color: #FF6219; }  /* match color in multi-line below */
 
 .popup-menu #notification {
     color: rgba(255, 255, 255, 0.87);
-    border-image: url("dark-assets/misc/message.svg") 9 9 9 9; }
+    /*border-image: url("dark-assets/misc/message.svg") 9 9 9 9;  */ }
 
 .popup-menu #notification .notification-button, .popup-menu #notification .notification-icon-button {
-    padding: 5px; }
+    padding: 23px; }
 
 #notification.multi-line-notification { /* header date and subject */
     padding-bottom: 13px;
     color: #FF6219; }   /* time & title color */
 
 #notification-scrollview {
-    max-height: 10em; }
+/*    max-height: 10em;*/ }
 
 #notification-scrollview > .top-shadow, #notification-scrollview > .bottom-shadow {
       height: 1em; }
@@ -1047,8 +1048,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     spacing: 10px; }
 
 .notification-with-image {
-  min-height: 159px;
-  color: rgba(255, 255, 255, 1); }
+/*  min-height: 159px; */
+  color: #FFFFFF; }
 
 .notification-button, .notification-icon-button {
   padding: 5px; }
@@ -1939,12 +1940,12 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     padding: 4px 1px; }
 
 .applet-separator-line {
-  width: 1px;
-  background: rgba(255, 255, 255, 0.12); }
+  width: 3px;
+  background: #ff791a; }
 
 .applet-separator-line-vertical {
     height: 1px;
-    background: rgba(255, 255, 255, 0.12); }
+    background: #ff791a; }
 
 .applet-box {
   padding-left: 4px;
