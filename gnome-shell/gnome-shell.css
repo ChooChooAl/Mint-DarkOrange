@@ -494,12 +494,16 @@
 /* Dock */
 
 #dash .dash-background {
-  border-radius: 6px !important;
+  border-radius: 4px !important;
+  padding: 2px 15px;
   background-color: #4F2700;  /*background1*/
   background-image: url("assets/background.jpg"); }
 
 .dash-label {
     color: white;
+    border-radius: 4px;
+    padding: 2px 15px;
+    border: 1px solid white;
     background-color: #4F2700;  /*background1*/
     background-image: url("assets/background.jpg"); }
 
