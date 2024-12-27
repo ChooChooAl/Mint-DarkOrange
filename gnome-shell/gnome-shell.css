@@ -100,8 +100,7 @@
 
 
 /* brightness & volume Sliders in quick settings */
-.slider,
-.level {
+.slider, .level {
     -barlevel-active-background-color: #C76300;  /*button-on*/
     color: white; }
 
