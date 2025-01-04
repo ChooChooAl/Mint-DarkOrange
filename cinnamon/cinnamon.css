@@ -1733,7 +1733,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .sound-track-box {
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 220px;}
+    max-width: 220px; }
 
 .sound-seek-box {
     padding-left: 15px; }
@@ -1787,7 +1787,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .sound-player-overlay {
   width: 290px;
-/*  height: 100px;     higher to make next/prev controls show */
   padding: 15px;
   spacing: 0.5em;
   background: rgba(47, 47, 47, 0.9);
@@ -1798,7 +1797,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     width: 24px;
     height: 15px;
     padding: 5px;
-/*    margin: 0 8px 0 8px; */
     color: #F0F0F0;
     border-radius: 2px;
     border: 1px solid #EB6E18; }
