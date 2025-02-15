@@ -14,10 +14,10 @@ stage {
   border-radius: 2px;
   box-shadow: inset 0 2px 4px rgba(73, 70, 68, 0.05); }
 
-.sound-button, 
-.modal-dialog-button-box .modal-dialog-button, 
-.notification-button, .notification-icon-button, 
-.popup-menu #notification .notification-button, 
+.sound-button,
+.modal-dialog-button-box .modal-dialog-button,
+.notification-button, .notification-icon-button,
+.popup-menu #notification .notification-button,
 .popup-menu #notification .notification-icon-button {
     border-radius: 2px; }
 
