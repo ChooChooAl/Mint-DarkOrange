@@ -1208,7 +1208,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     font-size: 1.1em; }
 
 .run-dialog-entry {
-    width: 21em;
+    width: 15em;
     height: 1.2em;
     padding: 7px;
     border-radius: 3px;
