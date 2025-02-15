@@ -251,7 +251,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   border: 1px solid #FF7919;
   border-radius: 0px;
   background-color: #210F00;
-  background: url("common-assets/menu/background.jpg");
+  background-image: url("common-assets/menu/background.jpg");
   background-repeat: repeat; }
 
 .menu.top {
@@ -401,18 +401,18 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   width: 32px; }     /* sets the width of vertical panels */
 
 #panelLeft .applet-box:first-child {
-    background: url("common-assets/panel/start.svg");
+    background-image: url("common-assets/panel/start.svg");
     border-image: none;
     transition-duration: 300;
     width: 60px; }
 
 #panelLeft .applet-box:first-child:hover {
     transition-duration: 200;
-    background: url("common-assets/panel/start-hover.svg");
+    background-image: url("common-assets/panel/start-hover.svg");
     border-image: none; }
 
 #panelLeft .applet-box:first-child:active {
-    background: url("common-assets/panel/start-active.svg");
+    background-image: url("common-assets/panel/start-active.svg");
     border-image: none; }
 
 #panelLeft {
@@ -535,7 +535,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   color: #FFFFFF;
   border: none;
   background-color: #261100;
-  background: url("common-assets/menu/background.jpg");
+  background-image: url("common-assets/menu/background.jpg");
   background-repeat: repeat;
   font-size: 1em;
   padding: 0px; }
