@@ -4219,7 +4219,7 @@ NautilusListView .view, NautilusListView iconview {
 .nemo-window .sidebar row {
       background-color: transparent;
  /*     font-size: 1em; */
-      -GtkTreeView-vertical-separator: -4px;  /* closes up the spacing on the sidebar in Nemo */
+      -GtkTreeView-vertical-separator: -5px;  /* closes up the spacing on the sidebar in Nemo */
       color: @theme_fg_color; }
 
 .nemo-window .sidebar .view.cell:selected,

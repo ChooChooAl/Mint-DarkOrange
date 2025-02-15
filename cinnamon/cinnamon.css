@@ -223,14 +223,27 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     color: #FFB580; }
 
 #Tooltip {
-  border: 1px solid #D0D0D0;
-  border-radius: 3px;
-  padding: 5px 12px;
-  background-color: #FBEAA0;
-  color: #000000;
-  font-size: 1em;
-  font-weight: normal;
-  text-align: center; }
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    padding: 5px 12px;
+    background-color: #FBEAA0;
+    font-size: 1em;
+    font-weight: normal;
+    color: #000000;
+    text-align: center; }
+
+/* ===================================================================
+* PopupMenu (popupMenu.js)
+* ===================================================================*/
+
+.popup-menu-boxpointer {
+  -arrow-border-radius: 3px;
+  -arrow-background-color: #32302F;
+  -arrow-border-width: 1px;
+  -arrow-border-color: #222120;
+  -arrow-base: 21px;
+  -arrow-rise: 9px;
+  -boxpointer-gap: 2px; }
 
 .menu {
   font-size: 1.05em;
@@ -345,15 +358,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-menu-icon {      /* icon on popup panel menu */
     icon-size: .9em; color: #FFFF00; }
 
-.popup-menu-boxpointer {
-  -arrow-border-radius: 3px;
-  -arrow-background-color: #32302F;
-  -arrow-border-width: 1px;
-  -arrow-border-color: #222120;
-  -arrow-base: 21px;
-  -arrow-rise: 9px;
-  -boxpointer-gap: 2px; }
-
 /* Scale view context menu */
 .popup-combo-menu {
   color: rgba(255, 255, 255, 0.87);
@@ -393,10 +397,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panel {
   font-weight: normal;
   font-size: 1.125em;
-  /* sets the height of horizontal panels */
-  height: 40px;
-  /* sets the width of vertical panels */
-  width: 32px; }
+  height: 40px;    /* sets the height of horizontal panels */
+  width: 32px; }     /* sets the width of vertical panels */
 
 #panelLeft .applet-box:first-child {
     background: url("common-assets/panel/start.svg");
@@ -1006,7 +1008,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     margin-top: 0.85em; }
 
 /* ===================================================================
-* Notifications     Global settings for popup, later line 1500+ defines applet
+    Notifications     Global settings for popup, later line 1500+ defines applet
+   header only in popup is just one line, but in notification applet, a time line is added.  Space is needed for 2 lines.
 * ===================================================================*/
 #notification {    /* single line no body */
     font-size: 1em;
@@ -1018,7 +1021,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     spacing-rows: 8px;
     spacing-columns: 10px;
     margin-from-right-edge-of-screen: 20px;
-/* header only in popup is just one line, but in notification applet, a time line is added.  Space is needed for 2 lines. */
     min-height: 50px;   /* fixes one line, header only, notification */
     width: 44em;
     color: #FF6219; }  /* match color in multi-line below */
@@ -1396,9 +1398,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 4px;
   border: 2px solid rgba(0, 0, 0, 0); }
 
-/*.menu-application-button:highlighted {
-    font-weight: normal; } */
-
 .menu-application-button:hover,
 .menu-application-button-selected {
     padding: 4px;
@@ -1406,8 +1405,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     background-color: #000000;
     border: 2px solid #FF791A; }
 
-/*.menu-application-button-selected:highlighted {
-      font-weight: normal; } */
 
 .menu-application-button-label:ltr {
     padding-left: 5px; }
@@ -1440,7 +1437,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu-category-button-label:rtl {
     padding-right: 4px; }
 
-.menu-selected-app-box {
+.menu-selected-app-box {    /* this is the box at the bottom for description of app selected */
     padding-right: 30px;
     padding-left: 28px;
     text-align: right;
@@ -1467,16 +1464,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .menu-search-box:rtl {
     padding-right: 30px; }
 
-#menu-search-entry {
-  width: 250px;
-  min-height: 16px;
-  font-weight: normal;
-  caret-color: rgba(255, 255, 255, 0.87); }
-
 /*===========================================
         OSD adjustments
 =============================================*/
-/* Context menu (at the moment only for favorites) */
 .info-osd {
   text-align: center;
   font-weight: bold;
@@ -2017,7 +2007,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     background-color: #000000;
     color: rgba(255, 255, 255, 0.87);
     padding: 10px;
-/*    padding-bottom: 16px; */
     border-right: 10px;
     border-bottom: 10px; }
 
