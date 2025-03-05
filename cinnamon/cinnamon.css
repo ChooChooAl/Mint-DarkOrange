@@ -403,11 +403,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panelLeft .applet-box:first-child {
     background-image: url("common-assets/panel/start.svg");
     border-image: none;
-    transition-duration: 300;
-    width: 60px; }
+    width: 75px; }
 
 #panelLeft .applet-box:first-child:hover {
-    transition-duration: 200;
     background-image: url("common-assets/panel/start-hover.svg");
     border-image: none; }
 
@@ -416,7 +414,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     border-image: none; }
 
 #panelLeft {
-    spacing: 4px; }  /* spacing between 'show desktop' and pinned launchers in panel */
+    spacing: 0px; }  /* spacing between 'show desktop' and pinned launchers in panel */
 
   #panelLeft:dnd {
       background-gradient-direction: vertical;
