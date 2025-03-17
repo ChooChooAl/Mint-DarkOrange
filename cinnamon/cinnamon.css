@@ -400,7 +400,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 40px;    /* sets the height of horizontal panels */
   width: 32px; }     /* sets the width of vertical panels */
 
-#panelLeft .applet-box:first-child {
+/*#panelLeft .applet-box:first-child {
     background-image: url("common-assets/panel/start.svg");
     border-image: none;
     width: 75px; }
@@ -412,7 +412,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #panelLeft .applet-box:first-child:active {
     background-image: url("common-assets/panel/start-active.svg");
     border-image: none; }
-
+*/
 #panelLeft {
     spacing: 0px; }  /* spacing between 'show desktop' and pinned launchers in panel */
 
@@ -471,7 +471,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     background-color: rgba(242, 13, 31, 0.5); }
 
 .panelLeft {
-  spacing: 4px; }
+  spacing: 0px; }
 
 .panelLeft:dnd {
     background-gradient-direction: vertical;
@@ -482,7 +482,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     padding-right: 4px; }
 
 .panelLeft:rtl {
-    padding-left: 4px; }
+    padding-left: 0px; }
 
 .panelLeft.vertical {
     padding: 0px; }

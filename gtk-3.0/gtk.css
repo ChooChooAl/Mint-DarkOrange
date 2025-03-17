@@ -18,7 +18,6 @@
   -gtk-outline-radius: 2px; }
 
 
-
 statusbar widget,
 statusbar button {
   border: 1px solid @theme_fg_color;
