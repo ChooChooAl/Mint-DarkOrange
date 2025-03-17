@@ -25,6 +25,7 @@ statusbar button {
 
 statusbar {
   border: 1px solid #1a0b00;
+  background-image: url("../cinnamon/common-assets/menu/background.jpg");
   background-color: #1a0b00; }
 
 .background {
@@ -54,12 +55,18 @@ statusbar {
     background-color: @bright_orange;
     color: #000000; }
 
-.view, iconview,
-.view text,
-textview text,
+.view {
+  color: #CFCFCF;
+  background-color: #080100; }   /* package List.   and sections on the left,  also names in 'themes'  so must be white(ish) */
+textview text, iconview {
+  color: #D0D0D0;
+  background-color: #080100; }
+.view text {
+  color: #FFFFFF;
+  background-color: #080100; } /* bottom info part of synaptic. */
 iconview text {
-  color: #F0F0F0;
-  background-color: #401f00; }  /* unique for fonts program mostly so fonts show against a lighter background */
+  color: #D0D0D0;
+  background-color: #080100; }  /* unique for fonts program mostly so fonts show against a lighter background */
 
 .view:selected,
 iconview:selected,
@@ -979,11 +986,11 @@ combobox arrow {
   min-height: 16px;
   min-width: 16px; }
 
-toolbar,
+toolbar, menubar,
 .inline-toolbar {
   -GtkWidget-window-dragging: true;
   padding: 4px;
-  background: url("../cinnamon/common-assets/menu/background.jpg"); }
+  background-image: url("../cinnamon/common-assets/menu/background.jpg"); }
 
 toolbar separator,
 .inline-toolbar separator {
@@ -1057,18 +1064,18 @@ toolbar:not(.inline-toolbar) .linked > entry,
 .primary-toolbar .inline-toolbar,
 .primary-toolbar:not(.libreoffice-toolbar) {
   color: rgba(255, 255, 255, 0.87);   /* toolbar icons ie nemo  */
-/*  background-color: @twenty_three; */
-/* this fixes synaptic.  Small space after search that was just gray # 232323. */
+/*  background-color: @twenty_three;  Not sure why this is commented */
+/* this fixes synaptic.  background in mall space after search that was just gray # 232323. */
   background: url("../cinnamon/common-assets/menu/background.jpg");
   box-shadow: none;
   border-width: 0 0 1px 0;
   border-style: solid;
-  font-size: 1.125em;
+  font-size: 16pt;
   border-image: linear-gradient(to bottom, @twenty_three, #050505) 1 0 1 0; }
 
 .inline-toolbar {
+  font-size: 16pt;
   background-color: #282828;
- /* font-size: 1em; */
   border-style: solid;
   border-color: @borders;
   border-width: 0 1px 1px;
@@ -1425,7 +1432,6 @@ headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button,
 .primary-toolbar .inline-toolbar .linked:not(.vertical).path-bar > button,
 headerbar .linked:not(.vertical).path-bar > button {
   color: #FFFFFF;   /* default folder path button in nemo */
-  /* font-size: 1em; */
   margin-right: 2px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: #301400; }
@@ -1908,7 +1914,6 @@ menubar:backdrop,
 
 menubar > menuitem,
 .menubar > menuitem {
-/*    font-size: 1em;    too much larger and Librewriter menu drilldown runs kinda off the screen.  */
     padding: 2px 16px 1px 16px;   /* I cut the padding by 1px on the bottom, not sure if it was needed.   the 1.1em above was better. */
     color: #FFFFFF;
     border: solid transparent;
@@ -1940,7 +1945,6 @@ menu,
 
 .csd menu,
 .csd .menu {
- /*   font-size: 1em; */
     padding: 4px 0px;
     border-radius: 2px;
     border: 1px solid #666666; }    /* border around the right click menus, and just drilldowns on menubar */
@@ -1961,7 +1965,6 @@ menu .separator:not(label), .csd menu .separator:not(label),
 
 menu menuitem,
 .menu menuitem {
-/*    font-size: 1em; */
     min-height: 16px;
     min-width: 40px;
     padding: 3px 18px; }         /* scrunch up menus, needs to be 2 for Libreoffice menu to fit page height */
@@ -2217,8 +2220,7 @@ notebook > header > tabs > arrow:disabled {
 
 notebook > header > tabs > tab {         /* tab text normally, dim */
     color: #ff9B6a;
-    background-color: rgba(64, 64, 64, 0);
-/*    font-size: 1em; */ }
+    background-color: rgba(64, 64, 64, 0); }
 
 /* border around the tab but not on the edge against the notebook */
 notebook > header.top > tabs > tab:checked { border: 2px solid #A0A0A0; border-bottom: 0px; }
@@ -2993,10 +2995,11 @@ list {  /* larger part of the selections in themes, not the buttons themselves *
 list row {
     padding: 2px; }
 
-row:not(:hover) { }
+row:not(:hover) {
+  background-color: #080100; }
 
-row.activatable.has-open-popup, row.activatable:hover { /* brighten the BG for hover,  seen in themes selection*/
-  background-color: rgba(255, 255, 255, 0.09); }
+row.activatable.has-open-popup, row.activatable:hover {     /* lighten the BG when hovered,  seen in themes selection*/
+  background-color: rgba(255, 255, 255, 0.19); }
 
 row.activatable:active {
   color: rgba(255, 255, 255, 0.87); }
@@ -3391,9 +3394,9 @@ infobar.info button.flat:disabled label,
 infobar.question button.flat:disabled label,
 infobar.warning button.flat:disabled label,
 infobar.error button.flat:disabled label {
-color: green;
-border-color: blue;
-background-color: yellow; }
+    color: green;
+    border-color: blue;
+    background-color: yellow; }
 
 row:selected button:hover,
 infobar.info button:hover,
@@ -3485,8 +3488,8 @@ tooltip decoration, .tooltip decoration {
 
 tooltip *, .tooltip * {
     background-color: transparent;
-    color: #FFFFFF;
-/*    font-size: 1em; */}
+    font-size: 14pt;
+    color: #FFFFFF; }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }
@@ -4197,8 +4200,9 @@ NautilusListView .view, NautilusListView iconview {
 
 .nemo-window .places-treeview {
     -NemoPlacesTreeView-disk-full-bg-color: rgba(255, 255, 255, 0.87);
-    -NemoPlacesTreeView-disk-full-fg-color: #e55700;
-    -GtkTreeView-vertical-separator: 7; }
+    -NemoPlacesTreeView-disk-full-fg-color: #ff540f;
+    -NemoPlacesTreeView-disk-full-bar-width: 5px;
+    -GtkTreeView-vertical-separator: -5; }
 
 .nemo-window .places-treeview .view.cell:hover,
 .nemo-window .places-treeview iconview.cell:hover {
@@ -4217,9 +4221,7 @@ NautilusListView .view, NautilusListView iconview {
 .nemo-window .sidebar iconview,
 .nemo-window .sidebar row {
       background-color: transparent;
- /*     font-size: 1em; */
-      -GtkTreeView-vertical-separator: -5px;  /* closes up the spacing on the sidebar in Nemo */
-      color: @theme_fg_color; }
+       color: @theme_fg_color; }
 
 .nemo-window .sidebar .view.cell:selected,
 .nemo-window .sidebar iconview.cell:selected,
@@ -4561,7 +4563,7 @@ EphyWindow .floating-bar {
 .xreader-window .primary-toolbar .button.the-button-in-the-combobox:disabled {
     color: rgba(255, 255, 255, 0.47); }
 
-calendar-view event label { font-size: 1.1em; }
+calendar-view event label { font-size: 1em; }
 
 calendar-view event.color-light label {
   color: black;
@@ -5039,7 +5041,7 @@ filechooser placessidebar.sidebar list scrollbar slider:disabled,
 
 #login_window #user_combobox {
   color: rgba(255, 255, 255, 0.87);
-  font-size: 1.125em; }
+  font-size: 24px; }
 
 #login_window #user_combobox menu {
     font-weight: normal; }
