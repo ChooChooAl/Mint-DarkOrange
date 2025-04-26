@@ -1815,9 +1815,9 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .sound-player-overlay > StBoxLayout {
     spacing: 5px; }
 
-.sound-player .slider {
- /* height: 0.5px; */
-  padding: 0;
+.sound-player .slider {   /* progress bar */
+  height: 6px;
+  padding: 10px 20px 0px 20px;
   border: none;
   -slider-height: 0.5em;
   -slider-background-color: #222222;
