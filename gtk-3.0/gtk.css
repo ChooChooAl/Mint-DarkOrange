@@ -1064,8 +1064,8 @@ toolbar:not(.inline-toolbar) .linked > entry,
 .primary-toolbar .inline-toolbar,
 .primary-toolbar:not(.libreoffice-toolbar) {
   color: rgba(255, 255, 255, 0.87);   /* toolbar icons ie nemo  */
-/*  background-color: @twenty_three;  Not sure why this is commented */
-/* this fixes synaptic.  background in mall space after search that was just gray # 232323. */
+  background-color: @twenty_three;  /*  Not sure why this is commented */
+/* this fixes synaptic.  background in small space after search that was just gray # 232323. */
   background: url("../cinnamon/common-assets/menu/background.jpg");
   box-shadow: none;
   border-width: 0 0 1px 0;
