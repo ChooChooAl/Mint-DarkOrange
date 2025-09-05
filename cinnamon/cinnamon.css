@@ -1929,7 +1929,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     padding: 4px 1px; }
 
 .applet-separator-line {
-  width: 3px;
+  width: 1px;
   background: #ff791a; }
 
 .applet-separator-line-vertical {
