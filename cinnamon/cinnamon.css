@@ -405,19 +405,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   height: 40px;    /* sets the height of horizontal panels */
   width: 32px; }     /* sets the width of vertical panels */
 
-/*#panelLeft .applet-box:first-child {
-    background-image: url("common-assets/panel/start.svg");
-    border-image: none;
-    width: 75px; }
 
-#panelLeft .applet-box:first-child:hover {
-    background-image: url("common-assets/panel/start-hover.svg");
-    border-image: none; }
-
-#panelLeft .applet-box:first-child:active {
-    background-image: url("common-assets/panel/start-active.svg");
-    border-image: none; }
-*/
 #panelLeft {
     spacing: 0px; }  /* spacing between 'show desktop' and pinned launchers in panel */
 
