@@ -3166,6 +3166,7 @@ menubutton arrow {
 @define-color theme_base_color #404040;
 @define-color theme_selected_bg_color #ff7139;
 @define-color theme_selected_fg_color #ffffff;
+@define-color accent_color #e85600;     /* new for mint 22.2 */
 @define-color fg_color rgba(255, 255, 255, 0.87);
 @define-color text_color #DADADA;
 @define-color bg_color #181818; /* was #383838 */

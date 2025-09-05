@@ -5279,6 +5279,7 @@ hdyleaflet:first-child headerbar {
 
 /* my own colors */
 @define-color bright_orange #e85600;
+@define-color accent_color #e85600;     /* new for mint 22.2 */
 @define-color thirty_five #353535;
 @define-color twenty_three #232323;
 @define-color twenty_one #212121;
