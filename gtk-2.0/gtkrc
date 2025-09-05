@@ -1,7 +1,7 @@
 # These are the defined colors for the theme, you can change them in GNOME's appearance preferences.
 
 # Good Theme  fg & text was #212121
-gtk_color_scheme = "bg_color:#FFD4AB
+gtk_color_scheme = "bg_color:#ffdebf
 selected_bg_color:#FF791A
 base_color:#F7F7F7
 fg_color:#000000
