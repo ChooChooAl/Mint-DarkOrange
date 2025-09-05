@@ -378,7 +378,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .popup-separator-menu-item {    /* horizontal stripe in popup menus  */
   -gradient-height: 2px;
   -gradient-start: #FF0000;
-  -gradient-end: #FFFF00;  /* middle */
+  -gradient-end: #FFFFFF;  /* middle */
   -margin-horizontal: 0;
     margin: 5px 0;
     height: 3px; }
