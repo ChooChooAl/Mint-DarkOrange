@@ -395,6 +395,10 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 .nm-menu-item-icons {
   spacing: .5em; }
 
+/* ===================================================================
+* Panel (panel.js)
+* ===================================================================*/
+
 #panel {
   font-weight: normal;
   font-size: 1.125em;
