@@ -4242,6 +4242,11 @@ NautilusListView .view, NautilusListView iconview {
 .nemo-window grid > paned > separator {
     background-image: linear-gradient(to bottom, @twenty_one, @twenty_one); }
 
+  .nemo-window toolbar.horizontal.primary-toolbar widget.linked.raised button:first-child widget {
+    -gtk-icon-source: -gtk-icontheme("go-previous-symbolic"); }
+  .nemo-window toolbar.horizontal.primary-toolbar widget.linked.raised button:last-child widget {
+    -gtk-icon-source: -gtk-icontheme("go-next-symbolic"); }
+
 .nemo-window widget .toolbar .image-button,
 .nemo-window widget .toolbar headerbar button.titlebutton,
 headerbar .nemo-window widget .toolbar button.titlebutton,
