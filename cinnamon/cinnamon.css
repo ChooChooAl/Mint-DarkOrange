@@ -1978,15 +1978,15 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
     text-shadow: none; }
 
 .user-icon {
-  width: 32px;
-  height: 32px;
-  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  background-color: black;
   border: none;
   border-radius: 0; }
 
 .user-label {
-  color: rgba(255, 255, 255, 0.87);
-  font-size: 1em;
+  color: #ffb480;
+  font-size: 1.4em;
   font-weight: normal;
   margin: 0px; }
 
