@@ -1,5 +1,6 @@
 /* 8/14/24  Commented a lot of the 1em font sizes.
-            Solved the issue of right click content in xed being larger than other right click/ drilldown items */
+        Solved the issue of right click content in xed
+        being larger than other right click/ drilldown items */
 
 * {
   background-clip: padding-box;
@@ -1935,7 +1936,7 @@ menubar > menuitem > label:disabled,
       color: rgba(255, 255, 255, 0.42); }
 
 menu,
-.menu { /* ie. themes picking icon themes, borders etc */
+.menu { /* ie. themes menu, picking icon themes, borders etc */
   margin: 4px;
   padding: 0;
   border-radius: 0;
@@ -5284,7 +5285,10 @@ hdyleaflet:first-child headerbar {
 
 /* my own colors */
 @define-color bright_orange #e85600;
-@define-color accent_color #e85600;     /* new for mint 22.2 */
+/*  dupe in libadwita-1.5/defaults-dark.css
+@define-color accent_color #e85600;
+@define-color accent_bg_color @theme_selected_bg_color;
+@define-color accent_fg_color @theme_selected_fg_color;   */
 @define-color thirty_five #353535;
 @define-color twenty_three #232323;
 @define-color twenty_one #212121;
