@@ -19,7 +19,7 @@
 @define-color error_bg_color @red_3;
 @define-color error_fg_color white;
 @define-color error_color @red_4;
-@define-color window_bg_color #fafafa;
+@define-color window_bg_color #f9dcd1;
 @define-color window_fg_color rgba(0, 0, 0, 0.8);
 @define-color view_bg_color #ffffff;
 @define-color view_fg_color rgba(0, 0, 0, 0.8);
