@@ -3718,7 +3718,7 @@ headerbar button.titlebutton.minimize,
 .titlebar button.titlebutton.close,
 .titlebar button.titlebutton.maximize,
 .titlebar button.titlebutton.minimize {
-    -gtk-icon-theme: "AKiconsD";      /* haven't tried but maybe AKiconsD */
+    -gtk-icon-theme: "AKiconsD";      /* Titlebar icons */
     background-color: transparent;
     background-size: 32px 32px;
     background-position: center;
@@ -3739,6 +3739,10 @@ headerbar button.titlebutton.close,
     color: #ffffff;
     background-color: #ee0000; }
 
+headerbar button.titlebutton.close:backdrop,
+.titlebar button.titlebutton.close:backdrop {
+      background-color: #dd0000; }
+
 headerbar button.titlebutton.close:backdrop:hover,
 .titlebar button.titlebutton.close:backdrop:hover,
 headerbar button.titlebutton.close:hover,
@@ -3749,9 +3753,11 @@ headerbar button.titlebutton.close:active,
 .titlebar button.titlebutton.close:active {
       background-color: #cc0000; }
 
-headerbar button.titlebutton.close:backdrop,
-.titlebar button.titlebutton.close:backdrop {
-      background-color: #dd0000; }
+headerbar button.titlebutton.maximize:backdrop,
+headerbar button.titlebutton.minimize:backdrop,
+.titlebar button.titlebutton.maximize:backdrop,
+.titlebar button.titlebutton.minimize:backdrop {
+    color: #000000; }
 
 headerbar button.titlebutton.maximize:hover,
 headerbar button.titlebutton.maximize:hover:backdrop,
@@ -3761,6 +3767,7 @@ headerbar button.titlebutton.minimize:hover:backdrop,
 .titlebar button.titlebutton.maximize:hover:backdrop,
 .titlebar button.titlebutton.minimize:hover,
 .titlebar button.titlebutton.minimize:hover:backdrop {
+    color: #ffffff;
     background-color: #000000; }
 
 headerbar button.titlebutton.maximize:active,
@@ -3772,12 +3779,6 @@ headerbar button.titlebutton.minimize:active:backdrop,
 .titlebar button.titlebutton.minimize:active,
 .titlebar button.titlebutton.minimize:active:backdrop {
     background-color: #000000; }
-
-headerbar button.titlebutton.maximize:backdrop,
-headerbar button.titlebutton.minimize:backdrop,
-.titlebar button.titlebutton.maximize:backdrop,
-.titlebar button.titlebutton.minimize:backdrop {
-    color: #000000; }
 
 .caja-navigation-window .view .cell:selected,
 .caja-navigation-window iconview .cell:selected,
@@ -5285,10 +5286,7 @@ hdyleaflet:first-child headerbar {
 
 /* my own colors */
 @define-color bright_orange #e85600;
-/*  dupe in libadwita-1.5/defaults-dark.css
-@define-color accent_color #e85600;
-@define-color accent_bg_color @theme_selected_bg_color;
-@define-color accent_fg_color @theme_selected_fg_color;   */
+@define-color accent_color #ff7139;
 @define-color thirty_five #353535;
 @define-color twenty_three #232323;
 @define-color twenty_one #212121;
