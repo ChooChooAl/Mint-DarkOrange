@@ -1268,7 +1268,7 @@ window > .titlebar:not(headerbar):backdrop,
 window.csd > .titlebar:not(headerbar),
 window.csd > .titlebar:not(headerbar):backdrop {
   padding: 0;
-  background-color: none;
+  /*background-color: none; */
   border: none;
   box-shadow: none; }
 
@@ -5055,7 +5055,8 @@ filechooser placessidebar.sidebar list scrollbar slider:disabled,
 
 #user_image {
   padding: 3px;
-  border-radius: 2px; }
+  border: none;
+  border-radius: 0px; }
 
 #shutdown_button.button {
   background-clip: border-box;
