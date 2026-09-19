@@ -31,7 +31,7 @@ statusbar {
 
 .background {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #080100; }
+  background-color: @theme_bg_color; }
 
 *:disabled {
     -gtk-icon-effect: dim; }
@@ -58,16 +58,16 @@ statusbar {
 
 .view {
   color: #CFCFCF;
-  background-color: #080100; }   /* package List.   and sections on the left,  also names in 'themes'  so must be white(ish) */
+  background-color: @theme_bg_color; }   /* package List.   and sections on the left,  also names in 'themes'  so must be white(ish) */
 textview text, iconview {
   color: #D0D0D0;
-  background-color: #080100; }
+  background-color: @theme_bg_color; }
 .view text {
   color: #FFFFFF;
-  background-color: #080100; } /* bottom info part of synaptic. */
+  background-color: @theme_bg_color; } /* bottom info part of synaptic. */
 iconview text {
   color: #D0D0D0;
-  background-color: #080100; }  /* unique for fonts program mostly so fonts show against a lighter background */
+  background-color: @theme_bg_color; }  /* unique for fonts program mostly so fonts show against a lighter background */
 
 .view:selected,
 iconview:selected,
@@ -2232,7 +2232,7 @@ notebook > header.right > tabs > tab:checked { border: 2px solid #A0A0A0; border
 notebook > header > tabs > tab:checked {    /* working tab */
     color: #FFFFFF;
     font-weight: normal;
-    background-color: #612400; }
+    background-color: #612400; }    /* darkorange brown? */
 
 notebook > header > tabs > tab:hover:not(:checked) {   /* tab text hover, brighter */
     color: #ffff00;
@@ -2997,7 +2997,7 @@ list row {
     padding: 2px; }
 
 row:not(:hover) {
-  background-color: #080100; }
+  background-color: @theme_bg_color; }
 
 row.activatable.has-open-popup, row.activatable:hover {     /* lighten the BG when hovered,  seen in themes selection*/
   background-color: rgba(255, 255, 255, 0.19); }
@@ -3435,7 +3435,7 @@ infobar.info button:disabled,
 infobar.question button:disabled,
 infobar.warning button:disabled,
 infobar.error button:disabled {
-  background-color: #404040;
+  background-color: @bg_color;
   border-color: #808080;
   color: #A0A0A0; }
 
@@ -4223,7 +4223,7 @@ NautilusListView .view, NautilusListView iconview {
 .nemo-window .sidebar iconview,
 .nemo-window .sidebar row {
       background-color: transparent;
-       color: @theme_fg_color; }
+      color: @theme_fg_color; }
 
 .nemo-window .sidebar .view.cell:selected,
 .nemo-window .sidebar iconview.cell:selected,
@@ -5298,13 +5298,13 @@ hdyleaflet:first-child headerbar {
 
 @define-color theme_fg_color #ffffff;
 @define-color theme_text_color #f0f0f0;
-@define-color theme_bg_color #202020;
-@define-color theme_base_color #404040;
+@define-color theme_bg_color #141414;
+@define-color theme_base_color #222223;
 @define-color theme_selected_bg_color #f85600;
 @define-color theme_selected_fg_color @theme_fg_color;
 @define-color fg_color rgba(255, 255, 255, 0.87);
 @define-color text_color #F0F0F0;
-@define-color bg_color #170B00;
+@define-color bg_color #363635;   /* this seems to be used more than other bg's.  Rainlendar etc */
 @define-color base_color @theme_base_color;
 @define-color selected_bg_color rgba(255, 121, 26, 0.9);  /* #ff791a */
 @define-color selected_fg_color @theme_fg_color;
@@ -5317,7 +5317,7 @@ hdyleaflet:first-child headerbar {
 @define-color theme_unfocused_base_color #404040;
 @define-color unfocused_borders @twenty_one;
 @define-color warning_color #f2353C;  /* redish */
-@define-color error_color #fC4138;
+@define-color error_color #fC4138;      /* almost the same, bit more orange */
 @define-color success_color #01ff01;
 @define-color placeholder_text_color #a8a8a8;
 @define-color content_view_bg @theme_base_color;
