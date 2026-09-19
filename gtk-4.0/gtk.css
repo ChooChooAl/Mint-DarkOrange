@@ -5,7 +5,7 @@
 
 .background {
   color: rgba(255, 255, 255, 0.87);
-  background-color: #181818; /* was rgba(56, 56, 56, 0.999); */ }
+  background-color: #181818; }
 
 dnd {
   color: rgba(255, 255, 255, 0.87); }
@@ -22,7 +22,7 @@ image:disabled {
 .view, iconview,
 textview > text {
   color: #DADADA;
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020; }
   .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus,
   textview > text:selected,
   textview > text:selected:focus {
@@ -80,8 +80,7 @@ gridview > child {
 
 coverflow cover {
   color: #DADADA;
-  background-color: #202020; /* was #404040 */
-  border: 1px solid black; }
+  background-color: #202020;
 
 label {
   outline-color: alpha(currentColor,0.3);
@@ -113,7 +112,7 @@ entry > text > placeholder, label.separator {
   color: rgba(255, 255, 255, 0.52); }
 
 window.assistant .sidebar {
-  background-color: #202020; /* was #404040 */
+  background-color: #202020;
   border-top: 1px solid #292929; }
   window.assistant .sidebar:dir(ltr) {
     border-right: 1px solid #292929; }
@@ -203,7 +202,7 @@ entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #DADADA;
   border-color: #292929;
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020; }
   spinbutton text.search,
   entry.search {
     border-radius: 4px; }
@@ -229,7 +228,7 @@ entry {
     padding: 2px;
     color: #DADADA;
     border-color: #292929;
-    background-color: #202020; /* was #404040 */
+    background-color: #202020; 
     border: none;
     border-radius: 0; }
   spinbutton text:focus-within,
@@ -237,7 +236,7 @@ entry {
     background-clip: border-box;
     color: #DADADA;
     border-color: #292929;
-    background-color: #202020; /* was #404040 */
+    background-color: #202020; 
     box-shadow: inset 1px 0 #ff7139, inset -1px 0 #ff7139, inset 0 1px #ff7139, inset 0 -1px #ff7139; }
     spinbutton text:focus-within > placeholder,
     entry:focus-within > placeholder {
@@ -325,19 +324,19 @@ entry progress > trough > progress {
   box-shadow: none; }
 
 treeview entry:focus-within:dir(rtl), treeview entry:focus-within:dir(ltr) {
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020;  }
 
 treeview entry.flat, treeview entry {
   border-radius: 0;
   background-image: none;
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020;  }
   treeview entry.flat:focus-within, treeview entry:focus-within {
     border-color: #ff7139; }
 
 editablelabel > stack > text {
   color: #DADADA;
   border-color: #292929;
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020;  }
 
 @keyframes needs_attention {
   from {
@@ -1617,7 +1616,7 @@ popover.background {
     background-color: transparent; }
 
 magnifier {
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020;  }
 
 popover.menu {
   padding: 0; }
@@ -1723,7 +1722,7 @@ notebook {
         padding-top: 0;
         padding-bottom: 0; }
   notebook > stack:not(:only-child) {
-    background-color: #202020; /* was #404040 */ }
+    background-color: #202020;  }
   notebook > header {
     padding: 2px;
     background-color: #181818; /* was #383838 */
@@ -1825,7 +1824,7 @@ notebook {
         border-color: #292929; }
       notebook > header > tabs > tab:checked {
         color: rgba(255, 255, 255, 0.87);
-        background-color: #202020; /* was #404040 */
+        background-color: #202020; 
         border-color: #292929; }
       notebook > header > tabs > tab button.flat {
         min-height: 22px;
@@ -2343,7 +2342,7 @@ levelbar > trough > block.full {
   background-color: #73d216; }
 
 levelbar > trough > block.empty {
-  background-color: #202020; /* was #404040 */
+  background-color: #202020; 
   border-color: #404040; }
 
 window.dialog.print drawing {
@@ -2424,7 +2423,7 @@ separator {
 listview,
 list {
   color: #DADADA;
-  background-color: #202020; /* was #404040 */
+  background-color: #202020; 
   border-color: #292929; }
   listview > row,
   list > row {
@@ -2669,7 +2668,7 @@ filechooserbutton:drop(active) {
     border-right-style: none; }
   .sidebar listview.view,
   .sidebar list {
-    background-color: #202020; /* was #404040 */ }
+    background-color: #202020;  }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
     border-style: none; }
 
@@ -2975,7 +2974,7 @@ colorchooser .popover.osd {
   border-radius: 3px; }
 
 .content-view {
-  background-color: #202020; /* was #404040 */ }
+  background-color: #202020;  }
   .content-view:hover {
     -gtk-icon-filter: brightness(1.2); }
   .content-view .tile {
@@ -3071,7 +3070,7 @@ shortcut > .keycap {
   padding-left: 6px;
   padding-right: 6px;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #202020; /* was #404040 */
+  background-color: #202020; 
   border: 1px solid;
   border-color: #292929;
   border-radius: 5px;
